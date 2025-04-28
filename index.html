@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .bg {
+            background-image: url('image01.png');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .header {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+
+            text-align: center;
+        }
+        .heading2{
+            padding-top: 5%;
+        }
+        .picture-container1 {
+            text-align: center;
+            padding-top: 5%;
+        }
+        .heading-03{
+            padding-top: 2%;
+            text-align: center;
+        }
+        .paragraph-modifier01{
+            padding-top: 2%;
+            height: 20%;
+            width: 80%;
+            margin: 0 auto;
+            line-height: 2;
+        }
+        .heading04{
+            padding-top: 15%;
+            text-align: center;
+        }
+        .big-heading{
+            padding-top: 15%;
+            text-align: center;
+            width: 70%;
+            font-size: 1.5em;
+            margin: 0 auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .heading-05{
+            padding-top: 10%;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+            line-height: 2;
+        }
+        .heading-06{
+            padding-top: 10%;
+            text-align: center;
+            
+        }
+        .heading-07{
+            padding-top: 7%;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+            line-height: 2;
+        }
+        .header001{
+            
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .heading-08{
+            padding-top: 10%;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+            line-height: 2;
+        }
+        .big-heading-02{
+            padding-top: 18%;
+            text-align: center;
+            width: 70%;
+            font-size: 1.5em;
+            margin: 0 auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .heading-09{
+            padding-top: 10%;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .heading-10{
+            padding-top: 10%;
+            text-align: center;
+        }
+        .heading-11{
+            padding-top: 10%;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+            line-height: 2;
+        }
+        .paragraph01{
+            padding-top: 5%;
+            text-align: center;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .paragraph02{
+            padding-top: 5%;
+            line-height: 2;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .paragraph-03{
+            padding-top: 5%;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .paragraph-04{
+            padding-top: 5%;
+            line-height: 2;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .paragraph-05{
+            padding-top: 5%;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .paragraph-06{
+            padding-top: 5%;
+            line-height: 2;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .paragraph-07{
+            padding-top: 5%;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .paragraph-08{
+            padding-top: 5%;
+            line-height: 2;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .paragraph-09{
+            padding-top: 5%;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .paragraph-10{
+            padding-top: 5%;
+            line-height: 2;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .paragraph-11{
+            padding-top: 5%;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .paragraph-12{
+            
+            padding-top: 5%;
+            line-height: 2;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .paragraph-122{
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 5%;
+            line-height: 2;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .paragraph-13{
+            padding-top: 5%;
+            line-height: 2;
+            width: 80%;
+            margin: 0 auto;
+        }
+        body{
+            background-color:#fbf3e4;
+        }
+        .bg1{
+            background-color: #f8f9fa;
+        }
+        .image-01{
+            padding-top: 5%;
+            text-align: center;
+        }
+        .box{
+            padding-top: 2%;
+            height: 30px;
+            width: 100%;
+            background-color: red;
+        }
+        .paragraph-14{
+            padding-top: 10%;
+            line-height: 2;
+            
+            margin: 0 auto;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .paragraph-001{
+            padding-top: 5%;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="bg">
+                    <div class="header">
+                        <h1 class="text-center text-black">Reflection</h1>
+                        <h2 class="text-center text-black">A Journey of Self-Discovery</h2>
+                        <p class="text-center text-black paragraph-001">By Kushal Kumar Guha</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="box">
+
+        </div>
+        
+            <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="heading02">
+                    <div class="image-01">
+                        <img src="strength01.png" alt="Reflection Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="heading2">
+                    <p class="paragraph01"> My Strength and Weakness</p>
+                    <p class="paragraph02">I see myself as a writer who is still learning but improving with every assignment. A strength of mine is I can imagine anything so quickly, and I can clearly lay out my ideas and structure in my writing well. For example, the Ethnography Assignment in Week 1 helped me develop my research skills and structure my observations clearly. However, one weakness I still face is making my writing more engaging and personal. Sometimes, my writing feels a bit too factual or formal, and I want to improve my tone to make it more reader-friendly.</p>
+                </div>
+
+            </div>
+        </div>
+    
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="picture-container1">
+                    <img src="thought01.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="heading-03">
+                    <p class="paragraph-03">My thoughts on writing</p>
+                    <div class="paragraph-modifier01">
+                    <p class="paragraph-04">
+                        At the start of the semester, I thought writing assignments were more about just completing tasks. After learning about Ethnographic Writing (like in Week 5), I now understand that writing in college requires deep thought, research, and an understanding of different genres. College writing isn’t just about writing essays; it’s about thinking critically and using different writing styles to communicate your ideas clearly. But I love it.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 col-sm-12 order-2 order-lg-1">
+                <div class="heading04">
+                    <p class="paragraph-05">
+                        How I Have Grown as a Writer as a Student
+                    </p>
+                    <p class="paragraph-06">
+                        I have grown as a writer by learning how to revise my work more effectively. In Week 7, I revised my Ethnography based on peer feedback. As a student, I’ve learned how to manage my time better, especially with the Research Proposal and the Annotated Bibliography assignments in Week 9. Although, I was late to submit these assignments most of the time, these tasks showed me how important it is to start early and stay organized. I will definitely use these skills in my future writing tasks.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12 order-1 order-lg-2">
+                <img src="writer01.png" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="big-heading">
+                    <p class="paragraph-07">
+                        Strengths and Weaknesses of My Revised Ethnography
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="heading-05">
+                    <p class="paragraph-08">
+                        My revised ethnography has stronger analysis and better organization than my first draft. I worked on making the structure of my writing clearer after getting feedback during the Peer Review sessions in week 7. However, I think my ethnography still has weaknesses. My Field Research could be deeper in some sections, especially after reading “Friday Night at the Iowa 80” in week 04 and thinking about how to better connect my observations to bigger ideas. I think I need to focus more on the context of the community I’m studying.
+                    </p>
+                </div>
+
+            </div>
+        
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="heading-06">
+                    <img src="revision.png" alt="">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="heading-07">
+                    <div class="header001">
+                        <p class="paragraph-09">
+                            My Revision Process for the Final Portfolio
+                        </p>
+                    </div>
+                    <p class="paragraph-10">
+                        For my Final Portfolio, I focused on both high-order concerns (HOC) and later-order concerns (LOC).
+
+<br> <br> HOC revision: I made my thesis more focused. In my first draft, the thesis wasn’t very specific, and it wasn’t clearly guiding my paper. I revised it in Week 6 after learning about how to analyze ethnography as a genre in class. So, later I had to take another interview for my ethnography to make my thesis clearer. I also worked on the organization of my paper. I tried to make sure each paragraph had a clear topic sentence and that my ideas flowed logically from one to the next. I used the feedback from my peers during the Peer Review session in Week 7 to help me with this.
+
+<br> <br> LOC revision: I worked on sentence clarity, especially after the Peer Review session in Week 7. Some of my sentences were long and hard to follow, so I broke them up into shorter, clearer sentences. And I used Grammarly to check for grammar and punctuation errors. I also made sure to use the right citation style (MLA) for my sources, which I learned about in Week 8.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 order-2 order-lg-1">
+                <div class="heading-08">
+                    <p class="paragraph-12">
+                        If I were to do this class over, I would start assignments earlier, especially the Research Proposal (Week 9). I found that I needed more time to gather good sources and analyze them. If I started earlier, I could have done a better job with revisions. However, I would definitely keep attending Peer Review sessions and seeking feedback from the professor. The insights I received helped me improve my work significantly, especially for the Ethnography and Research Proposal.
+                    </p>
+                </div>               
+               
+
+            </div>
+            <div class="col-lg-6 col-sm-12 order-1 order-lg-2">
+                <div class="big-heading-02">
+                    <p class="paragraph-11">
+                        What I Would Do Differently and What I Would Keep the Same
+                    </p>
+                </div>
+
+
+            </div>
+        
+        </div>
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="heading-09">
+                    <p class="paragraph-122">
+                        Advice for Future Students
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="heading-10">
+                    <img src="advice02.jpg" alt="">
+                </div>
+                
+
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="heading-11">
+                    <p class="paragraph-13">
+                        My advice for future students is to start assignments early (Although I was always late almost every time.)  and take advantage of the resources available, like the Writing Center and Peer Review sessions. These resources can help you improve your writing and get feedback on your work. The Ethnographic Research in Week 5 and the Research Proposal in Week 9 require time to gather information and analyze it properly. Also, take full advantage of Peer Review sessions, as they give you a chance to improve your work before the final submission. And, don’t be afraid to ask questions in class or reach out to your professor for help. Writing is a process, and it’s okay to seek support along the way.
+                    <br> <br>
+                        <span style="padding-top: 10%; font-size: 10px; color:black ">
+                        **Don’t think about my jacket. To be honest, I have no idea what games they play**
+                    </span>
+                    </p>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+
+<script>
+       
+gsap.registerPlugin(ScrollTrigger);
+
+
+gsap.from(".header h1, .header h2, .header p", {
+  opacity: 0,
+  y: 50,
+  duration: 1.5,
+  stagger: 0.3,
+  ease: "power2.out"
+});
+
+gsap.from(".heading02, .heading04, .heading-03, .heading-05, .heading-06, .heading-07, .heading-08, .heading-09, .heading-10, .heading-11", {
+  scrollTrigger: {
+    trigger: ".heading02",
+    start: "top 80%",
+    end: "bottom 60%",
+    toggleActions: "play none none none",
+  },
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  ease: "power2.out"
+});
+gsap.utils.toArray("img, p").forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%",
+      end: "bottom 60%",
+      toggleActions: "play none none none",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out"
+  });
+});
+
+</script>
+
+</html>
